@@ -1,5 +1,5 @@
 [
- [// Row 1
+ [
   {"id": "key_grave", "label": "`", "sLabel": "~"},
   {"id": "key_1", "label": "1", "sLabel": "!"},
   {"id": "key_2", "label": "2", "sLabel": "@"},
@@ -15,7 +15,7 @@
   {"id": "key_equals", "label": "=", "sLabel": "+"},
   {"id": "key_backspace", "label": "\u21E6", "func": "backspace"}
  ],
- [// Row 2
+ [
   {"id": "key_q", "label": "q"},
   {"id": "key_w", "label": "w"},
   {"id": "key_e", "label": "e"},
@@ -30,7 +30,7 @@
   {"id": "key_rightsquarebracket", "label": "]", "sLabel": "}"},
   {"id": "key_backslash", "label": "\\", "sLabel": "|"}
  ],
- [// Row 3
+ [
   {"id": "key_capslock", "label": "CapsLock", "func": "capslock"},
   {"id": "key_a", "label": "a"},
   {"id": "key_s", "label": "s"},
@@ -45,7 +45,7 @@
   {"id": "key_singlequote", "label": "'", "sLabel": "\""},
   {"id": "key_enter", "label": "Enter", "func": "enter"}
  ],
- [// Row 4
+ [
   {"id": "key_leftshift", "label": "Shift", "func": "shift"},
   {"id": "key_z", "label": "z"},
   {"id": "key_x", "label": "x"},
@@ -59,7 +59,7 @@
   {"id": "key_forwardslash", "label": "?", "sLabel": "?"},
   {"id": "key_rightshift", "label": "Shift", "func": "shift"}
  ],
- [// Row 5
+ [
   {"id": "key_spacebar", "label": "Space", "func": "space"},
  ]
 ]
