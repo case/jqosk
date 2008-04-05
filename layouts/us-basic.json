@@ -1,0 +1,33 @@
+[
+ [// Row 1
+  {"key_grave": {"label": "`", "sLabel": "~"},
+  {"key_1": {"label": "1", "sLabel": "!"},
+  {"key_2": {"label": "2", "sLabel": "@"},
+  {"key_3": {"label": "3", "sLabel": "#"},
+  {"key_4": {"label": "4", "sLabel": "$"},
+  {"key_5": {"label": "5", "sLabel": "%"},
+  {"key_6": {"label": "6", "sLabel": "^"},
+  {"key_7": {"label": "7", "sLabel": "&"},
+  {"key_8": {"label": "8", "sLabel": "*"},
+  {"key_9": {"label": "9", "sLabel": "("},
+  {"key_0": {"label": "0", "sLabel": ")"},
+  {"key_minus": {"label": "-", "sLabel": "_"},
+  {"key_equals": {"label": "=", "sLabel": "+"},
+  {"key_backspace": {"label": "\u21E6", "func": "backspace"}
+ ],
+ [// Row 2
+  {"key_q": {"label": "q"},
+  {"key_w": {"label": "w"},
+  {"key_e": {"label": "e"},
+  {"key_r": {"label": "r"},
+  {"key_t": {"label": "t"},
+  {"key_y": {"label": "y"},
+  {"key_u": {"label": "u"},
+  {"key_i": {"label": "i"},
+  {"key_o": {"label": "o"},
+  {"key_p": {"label": "p"},
+  {"key_leftsquarebracket": {"label": "[", "sLabel": "{"},
+  {"key_rightsquarebracket": {"label": "]", "sLabel": "}"}
+ ]
+]
+
