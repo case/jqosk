@@ -60,7 +60,7 @@
   {"id": "key_rightshift", "label": "Shift", "func": "shift"}
  ],
  [
-  {"id": "key_spacebar", "label": "Space", "func": "space"}
+  {"id": "key_spacebar", "label": "Space", "func": "space"},
  ]
 ]
 
