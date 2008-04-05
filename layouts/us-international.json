@@ -1,6 +1,6 @@
 [
  [
-  {"id": "key_deadgrave", "label": "`", "sLabel": "~", "func": "deadgrave", "sFunc": "deadtilde"},
+  {"id": "key_grave", "label": "`", "sLabel": "~", "func": "deadgrave", "sFunc": "deadtilde"},
   {"id": "key_1", "label": "1", "sLabel": "!", "altLabel": "¡", "sAltLabel": "¹"},
   {"id": "key_2", "label": "2", "sLabel": "@", "altLabel": "²"},
   {"id": "key_3", "label": "3", "sLabel": "#", "altLabel": "³"},
