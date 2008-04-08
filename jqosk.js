@@ -1,10 +1,5 @@
 (function() {
 
-function getJSONData(url) {
-  var retVal;
-
-
-}
 
 function OSK() {  
   var shift = false;
@@ -24,19 +19,20 @@ function OSK() {
       return shift;
     }
   };   
-};
+}
 
-OSK.prototype.loadLayout(layoutURL, forceReload) {
+OSK.prototype.loadLayout = function(layoutURL, forceReload) {
   forceReload = forceReload || false;
   if (forceReload || !this.layout) {
-    this.layout = getJSONData(layoutURL);
-    if (this.layout) {
-      return true;
-    } else {
-      return false;
-    }
+    jQuery.getJSON(layoutURL, function(data) {
+      jQOSK.layout = data;
+      jQOSK.layoutLoaded();
+    });
   }
 }
+
+OSK.prototype.layoutLoaded = function() {
+};
 
 window.jQOSK = new OSK;
 
