@@ -13,7 +13,7 @@
   {"id": "key_0", "label": "0", "sLabel": ")", "altLabel": "’"},
   {"id": "key_minus", "label": "-", "sLabel": "_", "altLabel": "¥"},
   {"id": "key_equals", "label": "=", "sLabel": "+", "altLabel": "×", "sAltLabel": "÷"},
-  {"id": "key_backspace", "label": "\u21E6", "func": "backspace", "sFunc": "backspace", "altFunc": "backspace", "sAltFunc": "backspace"}
+  {"id": "key_backspace", "label": "\u21E6", "sLabel": "\u21E6", "func": "backspace", "sFunc": "backspace", "altFunc": "backspace", "sAltFunc": "backspace"}
  ],
  [
   {"id": "key_q", "label": "q", "altLabel": "ä"},
@@ -31,7 +31,7 @@
   {"id": "key_backslash", "label": "\\", "sLabel": "|", "altLabel": "¬", "sAltLabel": "¦"}
  ],
  [
-  {"id": "key_capslock", "label": "CapsLock", "func": "capslock", "sFunc": "capslock", "altFunc": "capslock", "sAltFunc": "capslock"},
+  {"id": "key_capslock", "label": "CapsLock", "sLabel": "CapsLock", "func": "capslock", "sFunc": "capslock", "altFunc": "capslock", "sAltFunc": "capslock"},
   {"id": "key_a", "label": "a", "altLabel": "á"},
   {"id": "key_s", "label": "s", "altLabel": "ß", "sAltLabel": "§"},
   {"id": "key_d", "label": "d", "altLabel": "ð"},
@@ -43,10 +43,10 @@
   {"id": "key_l", "label": "l", "altLabel": "ø"},
   {"id": "key_semicolon", "label": ";", "sLabel": ":", "altLabel": "¶", "sAltLabel": "°"},
   {"id": "key_singlequote", "label": "'", "sLabel": "\"", "altLabel": "´", "sAltLabel": "¨", "func": "deadacute", "sFunc": "deadumlaut"},
-  {"id": "key_enter", "label": "Enter", "func": "enter", "sFunc": "enter", "altFunc": "enter", "sAltFunc": "enter"}
+  {"id": "key_enter", "label": "Enter", "sLabel": "Enter", "func": "enter", "sFunc": "enter", "altFunc": "enter", "sAltFunc": "enter"}
  ],
  [
-  {"id": "key_leftshift", "label": "Shift", "func": "shift", "sFunc": "shift", "altFunc": "shift", "sAltFunc": "shift"},
+  {"id": "key_leftshift", "label": "Shift", "sLabel": "Shift", "func": "shift", "sFunc": "shift", "altFunc": "shift", "sAltFunc": "shift"},
   {"id": "key_z", "label": "z", "altLabel": "æ"},
   {"id": "key_x", "label": "x"},
   {"id": "key_c", "label": "c", "altLabel": "©", "sAltLabel": "¢"},
@@ -57,7 +57,7 @@
   {"id": "key_comma", "label": ",", "sLabel": "<", "altLabel": "ç"},
   {"id": "key_period", "label": ".", "sLabel": ">"},
   {"id": "key_forwardslash", "label": "?", "sLabel": "?", "altLabel": "¿"},
-  {"id": "key_rightshift", "label": "Shift", "func": "shift", "sFunc": "shift", "altFunc": "shift", "sAltFunc": "shift"}
+  {"id": "key_rightshift", "label": "Shift", "sLabel": "Shift", "func": "shift", "sFunc": "shift", "altFunc": "shift", "sAltFunc": "shift"}
  ],
  [
   {"id": "key_spacebar", "label": "Space", "func": "space", "sFunc": "space", "altFunc": "space", "sAltFunc": "space"},

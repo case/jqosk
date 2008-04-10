@@ -1,31 +1,51 @@
 (function() {
 
-function Key(keyObj) {
-  jQuery.extend(this, keyObj);
-}
-
-Key.prototype.draw = function() {
-  return jQuery("<button id='" + this.id + "'>" + this.label + "</button>");
+var modifiers = {
+  shift: false,
+  altGr: false
 };
 
-var shift = false;
-var altGr = false;
+var keyIDs = {};
+
 var currentLayoutURL = "";
 
 window.jQOSK = {
-  shift: function(setting) {
-    if (arguments.length) {
-      return shift = !!setting;
-    } else {
-      return shift;
+  shift: function() {
+    modifiers.shift = !modifiers.shift;
+    for (var i = 0; i < this.keys.length; i++) {
+      var row = this.keys[i];
+      for (var j = 0; j < row.length; j++) {
+        row[j].shift(modifiers.shift);
+      }
     }
+    return modifiers.shift;;
   },
   
-  altGr: function(setting) {
-    if (arguments.length) {
-      return shift = !!setting;
+  getModifiers: function() {
+    return modifiers;
+  },
+  
+  activateKey: function(id) {
+    keyIDs[id].activate();
+  },
+  
+  altgr: function() {
+    modifiers.altGr = !modifiers.altGr;
+    for (var i = 0; i < this.keys.length; i++) {
+      var row = this.keys[i];
+      for (var j = 0; j < row.length; j++) {
+        row[j].altgr(modifiers.altGr);
+      }
+    }
+    return modifiers.altGr;
+  },
+  
+  typelabel: function(key) {
+    if (modifiers.shift) {
+      alert(key.sLabel);
+      this.shift();
     } else {
-      return shift;
+      alert(key.label);
     }
   },
 
@@ -47,6 +67,7 @@ window.jQOSK = {
       var row = [];
       for (var j = 0; j < layout[i].length; j++) {
         row[j] = new Key(layout[i][j]);
+        keyIDs[row[j].id] = row[j];
       }
       this.keys[i] = row;
     }

@@ -13,7 +13,7 @@
   {"id": "key_0", "label": "0", "sLabel": ")"},
   {"id": "key_minus", "label": "-", "sLabel": "_"},
   {"id": "key_equals", "label": "=", "sLabel": "+"},
-  {"id": "key_backspace", "label": "\u21E6", "func": "backspace", "sFunc": "backspace"}
+  {"id": "key_backspace", "label": "\u21E6", "sLabel": "\u21E6", "func": "backspace", "sFunc": "backspace"}
  ],
  [
   {"id": "key_q", "label": "q"},
@@ -31,7 +31,7 @@
   {"id": "key_backslash", "label": "\\", "sLabel": "|"}
  ],
  [
-  {"id": "key_capslock", "label": "CapsLock", "func": "capslock", "sFunc": "capslock"},
+  {"id": "key_capslock", "label": "CapsLock", "sLabel": "CapsLock","func": "capslock", "sFunc": "capslock"},
   {"id": "key_a", "label": "a"},
   {"id": "key_s", "label": "s"},
   {"id": "key_d", "label": "d"},
@@ -43,10 +43,10 @@
   {"id": "key_l", "label": "l"},
   {"id": "key_semicolon", "label": ";", "sLabel": ":"},
   {"id": "key_singlequote", "label": "'", "sLabel": "\""},
-  {"id": "key_enter", "label": "Enter", "func": "enter", "sFunc": "enter"}
+  {"id": "key_enter", "label": "Enter", "sLabel": "Enter", "func": "enter", "sFunc": "enter"}
  ],
  [
-  {"id": "key_leftshift", "label": "Shift", "func": "shift", "sFunc": "shift"},
+  {"id": "key_leftshift", "label": "Shift", "sLabel": "Shift", "func": "shift", "sFunc": "shift"},
   {"id": "key_z", "label": "z"},
   {"id": "key_x", "label": "x"},
   {"id": "key_c", "label": "c"},
@@ -57,10 +57,10 @@
   {"id": "key_comma", "label": ",", "sLabel": "<"},
   {"id": "key_period", "label": ".", "sLabel": ">"},
   {"id": "key_forwardslash", "label": "?", "sLabel": "?"},
-  {"id": "key_rightshift", "label": "Shift", "func": "shift", "sFunc": "shift"}
+  {"id": "key_rightshift", "label": "Shift", "sLabel": "Shift", "func": "shift", "sFunc": "shift"}
  ],
  [
-  {"id": "key_spacebar", "label": "Space", "func": "space", "sFunc": "space"}
+  {"id": "key_spacebar", "label": "Space", "sLabel": "Space", "func": "space", "sFunc": "space"}
  ]
 ]
 
