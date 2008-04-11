@@ -56,12 +56,12 @@
   {"id": "key_m", "label": "m", "altLabel": "µ"},
   {"id": "key_comma", "label": ",", "sLabel": "<", "altLabel": "ç"},
   {"id": "key_period", "label": ".", "sLabel": ">"},
-  {"id": "key_forwardslash", "label": "?", "sLabel": "?", "altLabel": "¿"},
+  {"id": "key_forwardslash", "label": "/", "sLabel": "?", "altLabel": "¿"},
   {"id": "key_rightshift", "label": "Shift", "sLabel": "Shift", "func": "shift", "sFunc": "shift", "altFunc": "shift", "sAltFunc": "shift"}
  ],
  [
-  {"id": "key_spacebar", "label": "Space", "func": "space", "sFunc": "space", "altFunc": "space", "sAltFunc": "space"},
-  {"id": "key_altgr", "label": "AltGr", "func": "altgr", "sFunc": "altgr", "altFunc": "altgr", "sAltFunc": "altgr"}
+  {"id": "key_spacebar", "label": "Space", "sLabel": "Space", "func": "space", "sFunc": "space", "altFunc": "space", "sAltFunc": "space"},
+  {"id": "key_altgr", "label": "AltGr", "sLabel": "AltGr", "func": "altgr", "sFunc": "altgr", "altFunc": "altgr", "sAltFunc": "altgr"}
  ]
 ]
 

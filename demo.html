@@ -6,8 +6,35 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="jqosk.js"></script>
 <script type="text/javascript" src="Key.js"></script>
+<style type="text/css">
+.launcher {
+ margin-bottom: .5em;
+}
+
+#jqosk div {
+ text-align: center;
+}
+
+#jqosk button {
+ height: 3em;
+ min-width: 2.5em;
+}
+
+#key_spacebar {
+  width: 15em;
+}
+
+#jqosk.shift #key_leftshift,
+#jqosk.shift #key_rightshift,
+#jqosk.altGr #key_altgr,
+#jqosk.capsLock #key_capslock
+{
+  background-color: #fd9;
+}
+</style>
 </head>
 <body>
-
+<button class="launcher" onclick="jQOSK.loadLayout('layouts/us-basic.json')">load us-basic</button>
+<button class="launcher" onclick="jQOSK.loadLayout('layouts/us-international.json')">load us-international</button>
 </body>
 </html>

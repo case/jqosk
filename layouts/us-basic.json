@@ -56,7 +56,7 @@
   {"id": "key_m", "label": "m"},
   {"id": "key_comma", "label": ",", "sLabel": "<"},
   {"id": "key_period", "label": ".", "sLabel": ">"},
-  {"id": "key_forwardslash", "label": "?", "sLabel": "?"},
+  {"id": "key_forwardslash", "label": "/", "sLabel": "?"},
   {"id": "key_rightshift", "label": "Shift", "sLabel": "Shift", "func": "shift", "sFunc": "shift"}
  ],
  [

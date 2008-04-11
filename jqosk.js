@@ -2,7 +2,8 @@
 
 var modifiers = {
   shift: false,
-  altGr: false
+  altGr: false,
+  capsLock: false
 };
 
 var keyIDs = {};
@@ -10,43 +11,12 @@ var keyIDs = {};
 var currentLayoutURL = "";
 
 window.jQOSK = {
-  shift: function() {
-    modifiers.shift = !modifiers.shift;
-    for (var i = 0; i < this.keys.length; i++) {
-      var row = this.keys[i];
-      for (var j = 0; j < row.length; j++) {
-        row[j].shift(modifiers.shift);
-      }
-    }
-    return modifiers.shift;;
-  },
-  
   getModifiers: function() {
     return modifiers;
   },
   
   activateKey: function(id) {
     keyIDs[id].activate();
-  },
-  
-  altgr: function() {
-    modifiers.altGr = !modifiers.altGr;
-    for (var i = 0; i < this.keys.length; i++) {
-      var row = this.keys[i];
-      for (var j = 0; j < row.length; j++) {
-        row[j].altgr(modifiers.altGr);
-      }
-    }
-    return modifiers.altGr;
-  },
-  
-  typelabel: function(key) {
-    if (modifiers.shift) {
-      alert(key.sLabel);
-      this.shift();
-    } else {
-      alert(key.label);
-    }
   },
 
   loadLayout: function(layoutURL, forceReload) {
@@ -86,6 +56,45 @@ window.jQOSK = {
       keyboard.append(row);
     }
     jQuery("body").append(keyboard);
+  },
+  
+///// Methods called by keys //////
+
+  shift: function() {
+    modifiers.shift = !modifiers.shift;
+    jQuery("#jqosk").toggleClass("shift");
+    for (var id in keyIDs) {
+      keyIDs[id].modify(modifiers);
+    }
+    return modifiers.shift;
+  },
+  
+  altgr: function() {
+    modifiers.altGr = !modifiers.altGr;
+    jQuery("#jqosk").toggleClass("altGr");
+    for (var id in keyIDs) {
+      keyIDs[id].modify(modifiers);
+    }
+    return modifiers.altGr;
+  },
+  
+  capslock: function() {
+    modifiers.capsLock = !modifiers.capsLock;
+    jQuery("#jqosk").toggleClass("capsLock");
+    for (var id in keyIDs) {
+      keyIDs[id].modify(modifiers);
+    }
+    return modifiers.capsLock;
+  },
+  
+  typelabel: function(key) {
+    alert(jQuery("#" + key.id).text());
+    if (modifiers.shift) {
+      this.shift();
+    }
+    if (modifiers.altGr) {
+      this.altgr();
+    }
   }
 };
 })();
